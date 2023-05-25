@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Profile card component</title>
+</head>
+  <body>
+    <section class="card">
+      <div class="card__bio">
+        <div class="card__bio--image">
+          <img src="./images/image-victor.jpg" alt="victor">
+        </div>
+        <div class="card__bio--info">
+          <h1>Victor Crest <b>26</b></h1>
+          <p>London</p>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <h3>80k</h3>
+          <span>Followers</span>
+        </div>
+        <div>
+          <h3>803k</h3>
+          <span>Likes</span>
+        </div>
+        <div>
+          <h3>1.4k</h3>
+          <span>Photos</span>
+        </div>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      --cyanDark: hsl(185, 75%, 39%);
+      --grayDark: hsl(0, 0%, 59%);
+      --blueVeryDark: hsl(229, 23%, 23%);
+      --blueDarkGray: hsl(227, 10%, 46%);
+      font-size: 18px;
+      font-family: 'Kumbh Sans', sans-serif;
+    }
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      background-color: var(--cyanDark);
+    }
+    h1, h3 {
+      color: var(--blueVeryDark);
+      font-weight: 700;
+    }
+    p {
+      color: var(--blueDarkGray);
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      padding-top: 10px;
+    }
+    span {
+      color: var(--blueDarkGray);
+      font-size: 0.6rem;
+      letter-spacing: 1px;
+    }
+    b {
+      color: var(--blueDarkGray);
+      font-weight: 400;
+      padding-left: 0.278rem;
+    }
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      width: 330px;
+      margin: auto;
+      text-align: center;
+      border-radius: 25px;
+    }
+    .card__bio {
+      background-image: url("./images/bg-pattern-card.svg");
+      background-repeat: no-repeat;
+      background-position: top center;
+      width: 100%;
+      padding-top: 1.39rem;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+    .card__bio--image img {
+      border-radius: 100px;
+      translate: 0 60px;
+      border: 5px solid #ffffff;
+    }
+    .card__bio--info {
+      background-color: #ffffff;
+      padding: 70px 0px 25px 0px;
+      border-bottom: 1px solid var(--grayDark);
+    }
+    .row {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #ffffff;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      padding: 25px 0px;
+    }
+    .attribution {
+      position: absolute;
+      bottom: 0;
+      font-size: 11px;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</html>
