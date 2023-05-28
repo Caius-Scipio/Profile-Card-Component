@@ -25,7 +25,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-- [Profile_Card](./images/profile%20card.png)
+- [Screenshot](./images/screencap.png)
 
 ### Links
 
@@ -47,7 +47,7 @@ Adding the image in such a way as to not cause issues of the rest of the code an
 
 ### Continued development
 
-I'd like to continue to work on the backgrund images and making them work corretly. I'd also like to start adding in some CSS frameworks and well as learning more about BEM when I use my own mark ups.
+I'd like to continue to work on the backgrund images and making them work corretly.
 
 ### Useful resources
 
