@@ -12,7 +12,7 @@
   <title>Frontend Mentor | Profile card component</title>
 </head>
   <body>
-    <section class="card">
+    <main class="card">
       <div class="card__bio">
         <div class="card__bio--image">
           <img src="./images/image-victor.jpg" alt="victor">
@@ -24,23 +24,23 @@
       </div>
       <div class="row">
         <div>
-          <h3>80k</h3>
+          <h2>80k</h2>
           <span>Followers</span>
         </div>
         <div>
-          <h3>803k</h3>
+          <h2>803k</h2>
           <span>Likes</span>
         </div>
         <div>
-          <h3>1.4k</h3>
+          <h2>1.4k</h2>
           <span>Photos</span>
         </div>
       </div>
-    </section>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </main>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
   </body>
 
   <style>
@@ -59,7 +59,7 @@
       display: grid;
       place-items: center;
       min-height: 100vh;
-      background: url(../images/bg-pattern-top.svg) top -450px left 0px no-repeat, url(../images/bg-pattern-bottom.svg) top 420px left 915px no-repeat;
+      background: url(../images/bg-pattern-top.svg) bottom 43vh right 45vw no-repeat, url(../images/bg-pattern-bottom.svg) top 46vh left 35vw no-repeat;
       background-color: var(--cyanDark);
     }
     h1, h3 {
@@ -106,7 +106,7 @@
     .card__bio--info {
       background-color: #ffffff;
       padding: 70px 0px 25px 0px;
-      border-bottom: 1px solid var(--grayDark);
+      border-bottom: 0.5px solid var(--grayDark);
     }
     .row {
       display: flex;
@@ -126,6 +126,12 @@
     }
     .attribution a {
       color: hsl(228, 45%, 44%);
+    }
+    @media only screen and (min-width: 1440px) {
+      body {
+        background: url(../images/bg-pattern-top.svg) bottom 40vh right 52vw no-repeat, url(../images/bg-pattern-bottom.svg) top 47vh left 51vw no-repeat;
+        background-color: var(--cyanDark);
+      }
     }
   </style>
 </html>
